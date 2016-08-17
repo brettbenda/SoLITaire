@@ -25,13 +25,13 @@ vector<Node*> foundClubs;
 vector<Node*> foundDiamonds;
 vector<Node*> foundSpades;
 vector<Node*> foundHearts;
-QString cardBack = QString("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Backs/cardBackBlue.jpg");
-QString backOne = QString("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Backs/cardBackBlue.jpg");
-QString backTwo = QString("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Backs/cardBackRed.jpg");
-QString backThree = QString("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Backs/cardBackGreen.jpg");
-QString backFour = QString("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Backs/cardBackGator.jpg");
-QString backFive = QString("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Backs/Liu.jpg");
-QString backSix = QString("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Backs/cardBackBasketball.jpg");
+QString cardBack = QString("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Backs/cardBackBlue.jpg");
+QString backOne = QString("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Backs/cardBackBlue.jpg");
+QString backTwo = QString("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Backs/cardBackRed.jpg");
+QString backThree = QString("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Backs/cardBackGreen.jpg");
+QString backFour = QString("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Backs/cardBackGator.jpg");
+QString backFive = QString("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Backs/Liu.jpg");
+QString backSix = QString("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Backs/cardBackBasketball.jpg");
 
 //CONSTRUCTOR - creates a 52 card deck
 List::List(vector<string> cards, MainWindow* w) {
@@ -270,194 +270,194 @@ MainWindow::MainWindow(QWidget *parent) :
 
     //Main Menu
     //  --- Background
-    QPixmap background("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Backgrounds/defaultBackground.jpg");
+    QPixmap background("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Backgrounds/defaultBackground.jpg");
     ui->mainMenu_background->setPixmap(background);
-    QPixmap logo("/Users/chandlergriffin/Documents/COP3503/SoLITaire/SoLITaire Logo.png");
+    QPixmap logo("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Extra Graphics/SoLITaire Logo.png");
     ui->mainMenu_logo->setPixmap(logo);
     //  --- Easter Egg
-    QPixmap easterEgg("/Users/chandlergriffin/Documents/COP3503/SoLITaire/DoctaLiu.jpg");
+    QPixmap easterEgg("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Extra Graphics/DoctaLiu.jpg");
     ui->DoctaLiu->setPixmap(easterEgg);
     ui->DoctaLiu->setVisible(false);
     ui->mainMenu_easterEggButton->setStyleSheet("background-color: rgba(255, 255, 255, 0);");
 
     //Options Menu
-    QPixmap background2("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Backgrounds/defaultBackground.jpg");
+    QPixmap background2("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Backgrounds/defaultBackground.jpg");
     ui->optionsMenu_background->setPixmap(background2);
-    QPixmap logo2("/Users/chandlergriffin/Documents/COP3503/SoLITaire/SoLITaire Logo.png");
+    QPixmap logo2("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Extra Graphics/SoLITaire Logo.png");
     ui->optionsMenu_design->setPixmap(logo2);
 
     //Gameplay Menu
     //  --- Background
-    QPixmap background3("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Backgrounds/defaultBackground.jpg");
+    QPixmap background3("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Backgrounds/defaultBackground.jpg");
     ui->gameplay_background->setPixmap(background3);
     //  --- Timer
     QTimer *timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(showTime()));
     timer->start(1000);
     //  --- Templates
-    ui->foundation_heart->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Foundations/foundation_heart.png"));
+    ui->foundation_heart->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Foundations/foundation_heart.png"));
     ui->foundation_heart->setIconSize(QSize(74, 97));
     ui->foundation_heart->setStyleSheet("background-color: rgba(255, 255, 255, 0);");
-    ui->foundation_spade->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Foundations/foundation_spade.png"));
+    ui->foundation_spade->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Foundations/foundation_spade.png"));
     ui->foundation_spade->setIconSize(QSize(74, 97));
     ui->foundation_spade->setStyleSheet("background-color: rgba(255, 255, 255, 0);");
-    ui->foundation_diamond->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Foundations/foundation_diamond.png"));
+    ui->foundation_diamond->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Foundations/foundation_diamond.png"));
     ui->foundation_diamond->setIconSize(QSize(74, 97));
     ui->foundation_diamond->setStyleSheet("background-color: rgba(255, 255, 255, 0);");
-    ui->foundation_club->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Foundations/foundation_club.png"));
+    ui->foundation_club->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Foundations/foundation_club.png"));
     ui->foundation_club->setIconSize(QSize(74, 97));
     ui->foundation_club->setStyleSheet("background-color: rgba(255, 255, 255, 0);");
-    ui->tableau_1->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Foundations/tableau.png"));
+    ui->tableau_1->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Foundations/tableau.png"));
     ui->tableau_1->setIconSize(QSize(74, 97));
     ui->tableau_1->setStyleSheet("background-color: rgba(255, 255, 255, 0);");
-    ui->tableau_2->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Foundations/tableau.png"));
+    ui->tableau_2->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Foundations/tableau.png"));
     ui->tableau_2->setIconSize(QSize(74, 97));
     ui->tableau_2->setStyleSheet("background-color: rgba(255, 255, 255, 0);");
-    ui->tableau_3->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Foundations/tableau.png"));
+    ui->tableau_3->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Foundations/tableau.png"));
     ui->tableau_3->setIconSize(QSize(74, 97));
     ui->tableau_3->setStyleSheet("background-color: rgba(255, 255, 255, 0);");
-    ui->tableau_4->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Foundations/tableau.png"));
+    ui->tableau_4->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Foundations/tableau.png"));
     ui->tableau_4->setIconSize(QSize(74, 97));
     ui->tableau_4->setStyleSheet("background-color: rgba(255, 255, 255, 0);");
-    ui->tableau_5->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Foundations/tableau.png"));
+    ui->tableau_5->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Foundations/tableau.png"));
     ui->tableau_5->setIconSize(QSize(74, 97));
     ui->tableau_5->setStyleSheet("background-color: rgba(255, 255, 255, 0);");
-    ui->tableau_6->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Foundations/tableau.png"));
+    ui->tableau_6->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Foundations/tableau.png"));
     ui->tableau_6->setIconSize(QSize(74, 97));
     ui->tableau_6->setStyleSheet("background-color: rgba(255, 255, 255, 0);");
-    ui->tableau_7->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Foundations/tableau.png"));
+    ui->tableau_7->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Foundations/tableau.png"));
     ui->tableau_7->setIconSize(QSize(74, 97));
     ui->tableau_7->setStyleSheet("background-color: rgba(255, 255, 255, 0);");
-    ui->deck->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Foundations/deck.png"));
+    ui->deck->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Foundations/deck.png"));
     ui->deck->setIconSize(QSize(74, 97));
     ui->deck->setStyleSheet("background-color: rgba(255, 255, 255, 0);");
 
     //  --- Cards
-    ui->card_1H->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_1H.GIF"));
+    ui->card_1H->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_1H.GIF"));
     ui->card_1H->setIconSize(QSize(74, 97));
-    ui->card_2H->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_2H.GIF"));
+    ui->card_2H->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_2H.GIF"));
     ui->card_2H->setIconSize(QSize(74, 97));
-    ui->card_3H->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_3H.GIF"));
+    ui->card_3H->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_3H.GIF"));
     ui->card_3H->setIconSize(QSize(74, 97));
-    ui->card_4H->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_4H.GIF"));
+    ui->card_4H->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_4H.GIF"));
     ui->card_4H->setIconSize(QSize(74, 97));
-    ui->card_5H->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_5H.GIF"));
+    ui->card_5H->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_5H.GIF"));
     ui->card_5H->setIconSize(QSize(74, 97));
-    ui->card_6H->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_6H.GIF"));
+    ui->card_6H->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_6H.GIF"));
     ui->card_6H->setIconSize(QSize(74, 97));
-    ui->card_7H->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_7H.GIF"));
+    ui->card_7H->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_7H.GIF"));
     ui->card_7H->setIconSize(QSize(74, 97));
-    ui->card_8H->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_8H.GIF"));
+    ui->card_8H->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_8H.GIF"));
     ui->card_8H->setIconSize(QSize(74, 97));
-    ui->card_9H->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_9H.GIF"));
+    ui->card_9H->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_9H.GIF"));
     ui->card_9H->setIconSize(QSize(74, 97));
-    ui->card_10H->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_10H.GIF"));
+    ui->card_10H->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_10H.GIF"));
     ui->card_10H->setIconSize(QSize(74, 97));
-    ui->card_11H->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_11H.GIF"));
+    ui->card_11H->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_11H.GIF"));
     ui->card_11H->setIconSize(QSize(74, 97));
-    ui->card_12H->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_12H.GIF"));
+    ui->card_12H->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_12H.GIF"));
     ui->card_12H->setIconSize(QSize(74, 97));
-    ui->card_13H->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_13H.GIF"));
+    ui->card_13H->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_13H.GIF"));
     ui->card_13H->setIconSize(QSize(74, 97));
-    ui->card_1C->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_1C.GIF"));
+    ui->card_1C->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_1C.GIF"));
     ui->card_1C->setIconSize(QSize(74, 97));
-    ui->card_2C->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_2C.GIF"));
+    ui->card_2C->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_2C.GIF"));
     ui->card_2C->setIconSize(QSize(74, 97));
-    ui->card_3C->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_3C.GIF"));
+    ui->card_3C->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_3C.GIF"));
     ui->card_3C->setIconSize(QSize(74, 97));
-    ui->card_4C->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_4C.GIF"));
+    ui->card_4C->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_4C.GIF"));
     ui->card_4C->setIconSize(QSize(74, 97));
-    ui->card_5C->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_5C.GIF"));
+    ui->card_5C->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_5C.GIF"));
     ui->card_5C->setIconSize(QSize(74, 97));
-    ui->card_6C->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_6C.GIF"));
+    ui->card_6C->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_6C.GIF"));
     ui->card_6C->setIconSize(QSize(74, 97));
-    ui->card_7C->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_7C.GIF"));
+    ui->card_7C->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_7C.GIF"));
     ui->card_7C->setIconSize(QSize(74, 97));
-    ui->card_8C->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_8C.GIF"));
+    ui->card_8C->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_8C.GIF"));
     ui->card_8C->setIconSize(QSize(74, 97));
-    ui->card_9C->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_9C.GIF"));
+    ui->card_9C->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_9C.GIF"));
     ui->card_9C->setIconSize(QSize(74, 97));
-    ui->card_10C->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_10C.GIF"));
+    ui->card_10C->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_10C.GIF"));
     ui->card_10C->setIconSize(QSize(74, 97));
-    ui->card_11C->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_11C.GIF"));
+    ui->card_11C->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_11C.GIF"));
     ui->card_11C->setIconSize(QSize(74, 97));
-    ui->card_12C->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_12C.GIF"));
+    ui->card_12C->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_12C.GIF"));
     ui->card_12C->setIconSize(QSize(74, 97));
-    ui->card_13C->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_13C.GIF"));
+    ui->card_13C->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_13C.GIF"));
     ui->card_13C->setIconSize(QSize(74, 97));
-    ui->card_1D->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_1D.GIF"));
+    ui->card_1D->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_1D.GIF"));
     ui->card_1D->setIconSize(QSize(74, 97));
-    ui->card_2D->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_2D.GIF"));
+    ui->card_2D->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_2D.GIF"));
     ui->card_2D->setIconSize(QSize(74, 97));
-    ui->card_3D->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_3D.GIF"));
+    ui->card_3D->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_3D.GIF"));
     ui->card_3D->setIconSize(QSize(74, 97));
-    ui->card_4D->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_4D.GIF"));
+    ui->card_4D->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_4D.GIF"));
     ui->card_4D->setIconSize(QSize(74, 97));
-    ui->card_5D->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_5D.GIF"));
+    ui->card_5D->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_5D.GIF"));
     ui->card_5D->setIconSize(QSize(74, 97));
-    ui->card_6D->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_6D.GIF"));
+    ui->card_6D->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_6D.GIF"));
     ui->card_6D->setIconSize(QSize(74, 97));
-    ui->card_7D->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_7D.GIF"));
+    ui->card_7D->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_7D.GIF"));
     ui->card_7D->setIconSize(QSize(74, 97));
-    ui->card_8D->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_8D.GIF"));
+    ui->card_8D->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_8D.GIF"));
     ui->card_8D->setIconSize(QSize(74, 97));
-    ui->card_9D->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_9D.GIF"));
+    ui->card_9D->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_9D.GIF"));
     ui->card_9D->setIconSize(QSize(74, 97));
-    ui->card_10D->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_10D.GIF"));
+    ui->card_10D->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_10D.GIF"));
     ui->card_10D->setIconSize(QSize(74, 97));
-    ui->card_11D->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_11D.GIF"));
+    ui->card_11D->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_11D.GIF"));
     ui->card_11D->setIconSize(QSize(74, 97));
-    ui->card_12D->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_12D.GIF"));
+    ui->card_12D->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_12D.GIF"));
     ui->card_12D->setIconSize(QSize(74, 97));
-    ui->card_13D->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_13D.GIF"));
+    ui->card_13D->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_13D.GIF"));
     ui->card_13D->setIconSize(QSize(74, 97));
-    ui->card_1S->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_1S.GIF"));
+    ui->card_1S->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_1S.GIF"));
     ui->card_1S->setIconSize(QSize(74, 97));
-    ui->card_2S->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_2S.GIF"));
+    ui->card_2S->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_2S.GIF"));
     ui->card_2S->setIconSize(QSize(74, 97));
-    ui->card_3S->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_3S.GIF"));
+    ui->card_3S->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_3S.GIF"));
     ui->card_3S->setIconSize(QSize(74, 97));
-    ui->card_4S->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_4S.GIF"));
+    ui->card_4S->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_4S.GIF"));
     ui->card_4S->setIconSize(QSize(74, 97));
-    ui->card_5S->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_5S.GIF"));
+    ui->card_5S->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_5S.GIF"));
     ui->card_5S->setIconSize(QSize(74, 97));
-    ui->card_6S->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_6S.GIF"));
+    ui->card_6S->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_6S.GIF"));
     ui->card_6S->setIconSize(QSize(74, 97));
-    ui->card_7S->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_7S.GIF"));
+    ui->card_7S->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_7S.GIF"));
     ui->card_7S->setIconSize(QSize(74, 97));
-    ui->card_8S->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_8S.GIF"));
+    ui->card_8S->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_8S.GIF"));
     ui->card_8S->setIconSize(QSize(74, 97));
-    ui->card_9S->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_9S.GIF"));
+    ui->card_9S->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_9S.GIF"));
     ui->card_9S->setIconSize(QSize(74, 97));
-    ui->card_10S->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_10S.GIF"));
+    ui->card_10S->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_10S.GIF"));
     ui->card_10S->setIconSize(QSize(74, 97));
-    ui->card_11S->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_11S.GIF"));
+    ui->card_11S->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_11S.GIF"));
     ui->card_11S->setIconSize(QSize(74, 97));
-    ui->card_12S->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_12S.GIF"));
+    ui->card_12S->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_12S.GIF"));
     ui->card_12S->setIconSize(QSize(74, 97));
-    ui->card_13S->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_13S.GIF"));
+    ui->card_13S->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_13S.GIF"));
     ui->card_13S->setIconSize(QSize(74, 97));
 
     //Card Back Menu
-    QPixmap background4("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Backgrounds/defaultBackground.jpg");
+    QPixmap background4("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Backgrounds/defaultBackground.jpg");
     ui->cardBackMenu_background->setPixmap(background4);
 
     //Background Menu
     //  --- Background
-    QPixmap background5("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Backgrounds/defaultBackground.jpg");
+    QPixmap background5("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Backgrounds/defaultBackground.jpg");
     ui->backgroundMenu_background->setPixmap(background5);
     //  --- Background Icon
-    QPixmap backgroundWoodIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Backgrounds/backgroundWoodIcon.jpg");
+    QPixmap backgroundWoodIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Backgrounds/backgroundWoodIcon.jpg");
     ui->backgroundMenu_backgroundWoodIcon->setPixmap(backgroundWoodIcon);
-    QPixmap backgroundVelvetIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Backgrounds/backgroundVelvetIcon.jpg");
+    QPixmap backgroundVelvetIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Backgrounds/backgroundVelvetIcon.jpg");
     ui->backgroundMenu_backgroundVelvetIcon->setPixmap(backgroundVelvetIcon);
-    QPixmap backgroundCircuitIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Backgrounds/backgroundCircuitIcon.jpg");
+    QPixmap backgroundCircuitIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Backgrounds/backgroundCircuitIcon.jpg");
     ui->backgroundMenu_backgroundCircuitIcon->setPixmap(backgroundCircuitIcon);
-    QPixmap backgroundChalkboardIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Backgrounds/backgroundChalkboardIcon.jpg");
+    QPixmap backgroundChalkboardIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Backgrounds/backgroundChalkboardIcon.jpg");
     ui->backgroundMenu_backgroundChalkboardIcon->setPixmap(backgroundChalkboardIcon);
-    QPixmap backgroundStarWarsIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Backgrounds/backgroundStarWarsIcon.jpg");
+    QPixmap backgroundStarWarsIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Backgrounds/backgroundStarWarsIcon.jpg");
     ui->backgroundMenu_backgroundStarWarsIcon->setPixmap(backgroundStarWarsIcon);
-    QPixmap backgroundMemeIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Backgrounds/backgroundMemeIcon.jpg");
+    QPixmap backgroundMemeIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Backgrounds/backgroundMemeIcon.jpg");
     ui->backgroundMenu_backgroundMemeIcon->setPixmap(backgroundMemeIcon);
 
     //Deck Code
@@ -642,211 +642,211 @@ MainWindow::MainWindow(QWidget *parent) :
 void MainWindow::flipCard(Node* first, bool up){
     if(up){
         if(first->Num()==1 && first->Suit().compare("H")==0){
-            ui->card_1H->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_1H.GIF"));
+            ui->card_1H->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_1H.GIF"));
             ui->card_1H->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==2 && first->Suit().compare("H")==0){
-            ui->card_2H->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_2H.GIF"));
+            ui->card_2H->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_2H.GIF"));
             ui->card_2H->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==3 && first->Suit().compare("H")==0){
-            ui->card_3H->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_3H.GIF"));
+            ui->card_3H->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_3H.GIF"));
             ui->card_3H->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==4 && first->Suit().compare("H")==0){
-            ui->card_4H->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_4H.GIF"));
+            ui->card_4H->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_4H.GIF"));
             ui->card_4H->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==5 && first->Suit().compare("H")==0){
-            ui->card_5H->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_5H.GIF"));
+            ui->card_5H->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_5H.GIF"));
             ui->card_5H->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==6 && first->Suit().compare("H")==0){
-            ui->card_6H->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_6H.GIF"));
+            ui->card_6H->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_6H.GIF"));
             ui->card_6H->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==7 && first->Suit().compare("H")==0){
-            ui->card_7H->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_7H.GIF"));
+            ui->card_7H->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_7H.GIF"));
             ui->card_7H->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==8 && first->Suit().compare("H")==0){
-            ui->card_8H->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_8H.GIF"));
+            ui->card_8H->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_8H.GIF"));
             ui->card_8H->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==9 && first->Suit().compare("H")==0){
-            ui->card_9H->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_9H.GIF"));
+            ui->card_9H->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_9H.GIF"));
             ui->card_9H->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==10 && first->Suit().compare("H")==0){
-            ui->card_10H->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_10H.GIF"));
+            ui->card_10H->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_10H.GIF"));
             ui->card_10H->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==11 && first->Suit().compare("H")==0){
-            ui->card_11H->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_11H.GIF"));
+            ui->card_11H->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_11H.GIF"));
             ui->card_11H->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==12 && first->Suit().compare("H")==0){
-            ui->card_12H->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_12H.GIF"));
+            ui->card_12H->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_12H.GIF"));
             ui->card_12H->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==13 && first->Suit().compare("H")==0){
-            ui->card_13H->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_13H.GIF"));
+            ui->card_13H->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_13H.GIF"));
             ui->card_13H->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==1 && first->Suit().compare("C")==0){
-            ui->card_1C->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_1C.GIF"));
+            ui->card_1C->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_1C.GIF"));
             ui->card_1C->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==2 && first->Suit().compare("C")==0){
-            ui->card_2C->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_2C.GIF"));
+            ui->card_2C->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_2C.GIF"));
             ui->card_2C->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==3 && first->Suit().compare("C")==0){
-            ui->card_3C->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_3C.GIF"));
+            ui->card_3C->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_3C.GIF"));
             ui->card_3C->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==4 && first->Suit().compare("C")==0){
-            ui->card_4C->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_4C.GIF"));
+            ui->card_4C->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_4C.GIF"));
             ui->card_4C->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==5 && first->Suit().compare("C")==0){
-            ui->card_5C->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_5C.GIF"));
+            ui->card_5C->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_5C.GIF"));
             ui->card_5C->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==6 && first->Suit().compare("C")==0){
-            ui->card_6C->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_6C.GIF"));
+            ui->card_6C->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_6C.GIF"));
             ui->card_6C->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==7 && first->Suit().compare("C")==0){
-            ui->card_7C->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_7C.GIF"));
+            ui->card_7C->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_7C.GIF"));
             ui->card_7C->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==8 && first->Suit().compare("C")==0){
-            ui->card_8C->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_8C.GIF"));
+            ui->card_8C->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_8C.GIF"));
             ui->card_8C->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==9 && first->Suit().compare("C")==0){
-            ui->card_9C->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_9C.GIF"));
+            ui->card_9C->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_9C.GIF"));
             ui->card_9C->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==10 && first->Suit().compare("C")==0){
-            ui->card_10C->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_10C.GIF"));
+            ui->card_10C->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_10C.GIF"));
             ui->card_10C->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==11 && first->Suit().compare("C")==0){
-            ui->card_11C->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_11C.GIF"));
+            ui->card_11C->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_11C.GIF"));
             ui->card_11C->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==12 && first->Suit().compare("C")==0){
-            ui->card_12C->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_12C.GIF"));
+            ui->card_12C->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_12C.GIF"));
             ui->card_12C->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==13 && first->Suit().compare("C")==0){
-            ui->card_13C->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_13C.GIF"));
+            ui->card_13C->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_13C.GIF"));
             ui->card_13C->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==1 && first->Suit().compare("S")==0){
-            ui->card_1S->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_1S.GIF"));
+            ui->card_1S->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_1S.GIF"));
             ui->card_1S->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==2 && first->Suit().compare("S")==0){
-            ui->card_2S->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_2S.GIF"));
+            ui->card_2S->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_2S.GIF"));
             ui->card_2S->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==3 && first->Suit().compare("S")==0){
-            ui->card_3S->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_3S.GIF"));
+            ui->card_3S->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_3S.GIF"));
             ui->card_3S->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==4 && first->Suit().compare("S")==0){
-            ui->card_4S->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_4S.GIF"));
+            ui->card_4S->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_4S.GIF"));
             ui->card_4S->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==5 && first->Suit().compare("S")==0){
-            ui->card_5S->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_5S.GIF"));
+            ui->card_5S->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_5S.GIF"));
             ui->card_5S->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==6 && first->Suit().compare("S")==0){
-            ui->card_6S->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_6S.GIF"));
+            ui->card_6S->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_6S.GIF"));
             ui->card_6S->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==7 && first->Suit().compare("S")==0){
-            ui->card_7S->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_7S.GIF"));
+            ui->card_7S->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_7S.GIF"));
             ui->card_7S->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==8 && first->Suit().compare("S")==0){
-            ui->card_8S->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_8S.GIF"));
+            ui->card_8S->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_8S.GIF"));
             ui->card_8S->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==9 && first->Suit().compare("S")==0){
-            ui->card_9S->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_9S.GIF"));
+            ui->card_9S->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_9S.GIF"));
             ui->card_9S->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==10 && first->Suit().compare("S")==0){
-            ui->card_10S->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_10S.GIF"));
+            ui->card_10S->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_10S.GIF"));
             ui->card_10S->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==11 && first->Suit().compare("S")==0){
-            ui->card_11S->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_11S.GIF"));
+            ui->card_11S->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_11S.GIF"));
             ui->card_11S->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==12 && first->Suit().compare("S")==0){
-            ui->card_12S->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_12S.GIF"));
+            ui->card_12S->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_12S.GIF"));
             ui->card_12S->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==13 && first->Suit().compare("S")==0){
-            ui->card_13S->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_13S.GIF"));
+            ui->card_13S->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_13S.GIF"));
             ui->card_13S->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==1 && first->Suit().compare("D")==0){
-            ui->card_1D->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_1D.GIF"));
+            ui->card_1D->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_1D.GIF"));
             ui->card_1D->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==2 && first->Suit().compare("D")==0){
-            ui->card_2D->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_2D.GIF"));
+            ui->card_2D->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_2D.GIF"));
             ui->card_2D->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==3 && first->Suit().compare("D")==0){
-            ui->card_3D->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_3D.GIF"));
+            ui->card_3D->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_3D.GIF"));
             ui->card_3D->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==4 && first->Suit().compare("D")==0){
-            ui->card_4D->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_4D.GIF"));
+            ui->card_4D->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_4D.GIF"));
             ui->card_4D->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==5 && first->Suit().compare("D")==0){
-            ui->card_5D->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_5D.GIF"));
+            ui->card_5D->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_5D.GIF"));
             ui->card_5D->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==6 && first->Suit().compare("D")==0){
-            ui->card_6D->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_6D.GIF"));
+            ui->card_6D->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_6D.GIF"));
             ui->card_6D->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==7 && first->Suit().compare("D")==0){
-            ui->card_7D->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_7D.GIF"));
+            ui->card_7D->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_7D.GIF"));
             ui->card_7D->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==8 && first->Suit().compare("D")==0){
-            ui->card_8D->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_8D.GIF"));
+            ui->card_8D->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_8D.GIF"));
             ui->card_8D->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==9 && first->Suit().compare("D")==0){
-            ui->card_9D->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_9D.GIF"));
+            ui->card_9D->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_9D.GIF"));
             ui->card_9D->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==10 && first->Suit().compare("D")==0){
-            ui->card_10D->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_10D.GIF"));
+            ui->card_10D->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_10D.GIF"));
             ui->card_10D->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==11 && first->Suit().compare("D")==0){
-            ui->card_11D->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_11D.GIF"));
+            ui->card_11D->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_11D.GIF"));
             ui->card_11D->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==12 && first->Suit().compare("D")==0){
-            ui->card_12D->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_12D.GIF"));
+            ui->card_12D->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_12D.GIF"));
             ui->card_12D->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }else if(first->Num()==13 && first->Suit().compare("D")==0){
-            ui->card_13D->setIcon(QIcon("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_13D.GIF"));
+            ui->card_13D->setIcon(QIcon("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Card Fronts/Card Front_Regular/card_13D.GIF"));
             ui->card_13D->setIconSize(QSize(74, 97));
             first->SetFaceup(true);
         }
@@ -1426,7 +1426,7 @@ void MainWindow::on_gameplay_quitGameButton_clicked()
     ui->optionsMenu->setVisible(false);
     ui->gameplay->setVisible(false);
     ui->cardBackMenu->setVisible(false);
-    QPixmap background("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Backgrounds/defaultBackground.jpg");
+    QPixmap background("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Backgrounds/defaultBackground.jpg");
     ui->gameplay_background->setPixmap(background);
 }
 void MainWindow::on_optionsMenu_changeCardBackDesignButton_clicked()
@@ -1463,32 +1463,32 @@ void MainWindow::on_backgroundMenu_returnToOptionsMenuButton_clicked()
 //Background Change Functions
 void MainWindow::on_backgroundMenu_setWoodBackgroundButton_clicked()
 {
-    QPixmap backgroundWood("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Backgrounds/backgroundWood.jpg");
+    QPixmap backgroundWood("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Backgrounds/backgroundWood.jpg");
     ui->gameplay_background->setPixmap(backgroundWood);
 }
 void MainWindow::on_backgroundMenu_setVelvetBackgroundButton_clicked()
 {
-    QPixmap backgroundVelvet("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Backgrounds/backgroundVelvet.jpg");
+    QPixmap backgroundVelvet("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Backgrounds/backgroundVelvet.jpg");
     ui->gameplay_background->setPixmap(backgroundVelvet);
 }
 void MainWindow::on_backgroundMenu_setCircuitBackgroundButton_clicked()
 {
-    QPixmap backgroundCircuit("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Backgrounds/backgroundCircuit.jpg");
+    QPixmap backgroundCircuit("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Backgrounds/backgroundCircuit.jpg");
     ui->gameplay_background->setPixmap(backgroundCircuit);
 }
 void MainWindow::on_backgroundMenu_setChalkboardBackgroundButton_clicked()
 {
-    QPixmap backgroundChalkboard("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Backgrounds/backgroundChalkboard.jpg");
+    QPixmap backgroundChalkboard("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Backgrounds/backgroundChalkboard.jpg");
     ui->gameplay_background->setPixmap(backgroundChalkboard);
 }
 void MainWindow::on_backgroundMenu_setStarWarsBackgroundButton_clicked()
 {
-    QPixmap backgroundStarWars("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Backgrounds/backgroundStarWars.jpg");
+    QPixmap backgroundStarWars("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Backgrounds/backgroundStarWars.jpg");
     ui->gameplay_background->setPixmap(backgroundStarWars);
 }
 void MainWindow::on_backgroundMenu_setMemeBackgroundButton_clicked()
 {
-    QPixmap backgroundMeme("/Users/chandlergriffin/Documents/COP3503/SoLITaire/Backgrounds/backgroundMeme.jpg");
+    QPixmap backgroundMeme("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Backgrounds/backgroundMeme.jpg");
     ui->gameplay_background->setPixmap(backgroundMeme);
 }
 void MainWindow::on_mainMenu_easterEggButton_clicked()
@@ -6275,7 +6275,7 @@ void MainWindow::checkWin(){
                                 if(foundDrawn.empty()){
                                     if(foundDeck.empty()){
                                       ui->winScreen->raise();
-                                      ui->winScreen->setPixmap(QPixmap("/Users/chandlergriffin/Documents/COP3503/SoLITaire/winnerNew.png"));
+                                      ui->winScreen->setPixmap(QPixmap("/Users/chandlergriffin/Documents/School Work/UF/Spring 16/COP3503/SoLITaire/Extra Graphics/winnerNew.png"));
                                       ui->gameplay_quitGameButton->raise();
                                       ui->gameplay_quitGameButton->setText("Return to Main Menu");
                                     }
